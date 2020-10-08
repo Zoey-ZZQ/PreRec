@@ -4,9 +4,8 @@
 
 - 奇异值：奇异值和矩阵的特征值有关系。这里的奇异值Data*DataT特征值的平方根。
 - 奇异值分解：SVD是矩阵分解的一种类型，用于提取信息，可以把SVD看成是从噪声数据中抽取相关特征。SVD将原始的数据集矩阵Data分解成三个矩阵U、Σ和VT。
-
 $$
-Data_{m*n} = U_{m*m} Σ_{m*n} VT_{n*n}
+Data_{m*n} = U_{m*m}Σ_{m*n}VT_{n*n}
 $$
 
 上述分解构造出一个矩阵Σ即为奇异值矩阵，该矩阵只有对角元素，其余元素均为0。这些对角元素由大到小排列，对应了原始数据矩阵Data的奇异值。U通常是项目矩阵，VT通常是用户矩阵。
@@ -19,7 +18,7 @@ $$
 
 确定奇异值数目后，奇异值矩阵就会变为一个小很多的对角矩阵。例如取奇异值为3，那么上述矩阵Data就可以被近似为：
 $$
-Data_{m*n}=U_{m*3}Σ_{3*3} VT_{3*n}
+Data_{m*n}=U_{m*3}Σ_{3*3}VT_{3*n}
 $$
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200821112558953.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzM0Nzg5,size_16,color_FFFFFF,t_70#pic_center)
