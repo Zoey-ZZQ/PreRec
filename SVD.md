@@ -16,7 +16,9 @@ $$
 ## SVD降维
 
 确定奇异值数目后，奇异值矩阵就会变为一个小很多的对角矩阵。例如取奇异值为3，那么上述矩阵Data就可以被近似为：
-D a t a m ∗ n = U m ∗ 3 Σ 3 ∗ 3 V T 3 ∗ n Data_{m*n}=U_{m*3}Σ_{3*3} VT_{3*n}*D**a**t**a**m*∗*n*​=*U**m*∗3​Σ3∗3​*V**T*3∗*n*​
+$$
+Data_{m*n}=U_{m*3}Σ_{3*3} VT_{3*n}
+$$
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200821112558953.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQ1MzM0Nzg5,size_16,color_FFFFFF,t_70#pic_center)
 
 SVD分解：
